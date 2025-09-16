@@ -11,6 +11,7 @@ class MagicPerson
     // 当你访问一个不存在的属性时，比如 $p->name，会自动调用此方法
     public function __get($name)
     {
+        echo "execute get $name".PHP_EOL;
         if (array_key_exists($name, $this->data)) {
             return $this->data[$name];
         }
