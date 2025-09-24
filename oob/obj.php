@@ -1,6 +1,6 @@
 <?php
 
-class obj
+class Obj
 {
 
     function info()
@@ -9,3 +9,11 @@ class obj
     }
 
 }
+
+$obj = new Obj();
+$obj->info();
+
+
+$ov = "Obj";
+$o2 = new $ov();
+$o2->info();
